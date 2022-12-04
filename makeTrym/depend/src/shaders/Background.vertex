@@ -1,0 +1,24 @@
+#version 330 core
+
+layout(location = 0) in vec2 aPos; 
+//layout(location = 1) in vec2 aTexCoord;
+
+
+//uniform float WindowWidth;
+//uniform float WindowHeight;
+
+
+out vec2 TexCoord;
+
+void main() {
+	//TexCoord = aTexCoord;
+	
+	gl_Position = vec4(aPos,0.0,1.0);
+	/*
+	gl_Position = vec4(
+		((aPos.x + 1.0) * WindowWidth / WindowWidth)  + (0 * 2 / WindowWidth)  - 1.0,
+		((aPos.y + 1.0) * WindowHeight / WindowHeight) + (0 * 2 / WindowHeight) - 1.0,
+		0.0,
+		1.0);
+	*/
+}

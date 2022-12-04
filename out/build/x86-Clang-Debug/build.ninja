@@ -39,7 +39,7 @@ include CMakeFiles\rules.ninja
 # Utility command for install/local
 
 build CMakeFiles\install\local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -51,7 +51,7 @@ build install\local: phony CMakeFiles\install\local.util
 # Utility command for install
 
 build CMakeFiles\install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -63,7 +63,7 @@ build install: phony CMakeFiles\install.util
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -74,7 +74,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -B"D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -BD:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -102,36 +102,36 @@ build list_install_components: phony
 build cmake_object_order_depends_target_makeTrym: phony || cmake_object_order_depends_target_glfw
 
 build makeTrym\CMakeFiles\makeTrym.dir\makeTrym.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\makeTrym.cpp || cmake_object_order_depends_target_makeTrym
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 build makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src\glad.c.obj: C_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\glad\src\glad.c || cmake_object_order_depends_target_makeTrym
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 build makeTrym\CMakeFiles\makeTrym.dir\depend\src\ShaderProgram.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\ShaderProgram.cpp || cmake_object_order_depends_target_makeTrym
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 build makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\loading.cpp || cmake_object_order_depends_target_makeTrym
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 
 # =============================================================================
@@ -139,26 +139,26 @@ build makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj: CXX_COMPILER_
 
 
 #############################################
-# Link the executable makeTrym\makeTrym.exe
+# Link the executable ..\..\..\makeTrym.exe
 
-build makeTrym\makeTrym.exe: CXX_EXECUTABLE_LINKER__makeTrym_Debug makeTrym\CMakeFiles\makeTrym.dir\makeTrym.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src\glad.c.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\ShaderProgram.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj | makeTrym\depend\glfw\src\glfw3.lib || makeTrym\depend\glfw\src\glfw3.lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+build ..\..\..\makeTrym.exe: CXX_EXECUTABLE_LINKER__makeTrym_Debug makeTrym\CMakeFiles\makeTrym.dir\makeTrym.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src\glad.c.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\ShaderProgram.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj | makeTrym\depend\glfw\src\glfw3.lib || makeTrym\depend\glfw\src\glfw3.lib
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = makeTrym\depend\glfw\src\glfw3.lib  opengl32.lib  -lc++experimental  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_FILE = makeTrym\makeTrym.exe
-  TARGET_IMPLIB = makeTrym\makeTrym.lib
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_FILE = ..\..\..\makeTrym.exe
+  TARGET_IMPLIB = ..\..\..\makeTrym.lib
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 
 #############################################
 # Utility command for install/local
 
 build makeTrym\CMakeFiles\install\local.util: CUSTOM_COMMAND makeTrym\all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -170,7 +170,7 @@ build makeTrym\install\local: phony makeTrym\CMakeFiles\install\local.util
 # Utility command for install
 
 build makeTrym\CMakeFiles\install.util: CUSTOM_COMMAND makeTrym\all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -182,7 +182,7 @@ build makeTrym\install: phony makeTrym\CMakeFiles\install.util
 # Utility command for edit_cache
 
 build makeTrym\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -193,7 +193,7 @@ build makeTrym\edit_cache: phony makeTrym\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build makeTrym\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -B"D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -BD:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -222,7 +222,7 @@ build makeTrym\depend\glfw\uninstall: phony makeTrym\depend\glfw\CMakeFiles\unin
 # Utility command for install/local
 
 build makeTrym\depend\glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND makeTrym\depend\glfw\all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -234,7 +234,7 @@ build makeTrym\depend\glfw\install\local: phony makeTrym\depend\glfw\CMakeFiles\
 # Utility command for install
 
 build makeTrym\depend\glfw\CMakeFiles\install.util: CUSTOM_COMMAND makeTrym\depend\glfw\all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -246,7 +246,7 @@ build makeTrym\depend\glfw\install: phony makeTrym\depend\glfw\CMakeFiles\instal
 # Utility command for edit_cache
 
 build makeTrym\depend\glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -257,7 +257,7 @@ build makeTrym\depend\glfw\edit_cache: phony makeTrym\depend\glfw\CMakeFiles\edi
 # Utility command for rebuild_cache
 
 build makeTrym\depend\glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -B"D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -BD:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -275,7 +275,7 @@ build makeTrym\depend\glfw\list_install_components: phony
 # Custom command for makeTrym\depend\glfw\CMakeFiles\uninstall
 
 build makeTrym\depend\glfw\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "D:/CPP/MeineProjekte/makeTrym/out/build/x64-Debug (Standard)/makeTrym/depend/glfw/cmake_uninstall.cmake""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P D:/CPP/MeineProjekte/makeTrym/out/build/x86-Clang-Debug/makeTrym/depend/glfw/cmake_uninstall.cmake"
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -299,7 +299,7 @@ build makeTrym\depend\glfw\src\update_mappings: phony makeTrym\depend\glfw\src\C
 # Utility command for rebuild_cache
 
 build makeTrym\depend\glfw\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw\src" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -B"D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\CPP\MeineProjekte\makeTrym -BD:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -317,7 +317,7 @@ build cmake_object_order_depends_target_glfw: phony || makeTrym\depend\glfw\src\
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -326,7 +326,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__gl
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -335,7 +335,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -344,7 +344,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -353,7 +353,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__gl
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -362,7 +362,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glf
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -371,7 +371,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glf
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -380,7 +380,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER_
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -389,7 +389,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPI
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -398,7 +398,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPIL
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -407,7 +407,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER_
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -416,7 +416,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILE
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -425,7 +425,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILE
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -434,7 +434,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -443,7 +443,7 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER
 
 build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_Debug ..\..\..\makeTrym\depend\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
+  FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include -I..\..\..\makeTrym\depend\glfw\src -ImakeTrym\depend\glfw\src
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
@@ -459,8 +459,8 @@ build makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPI
 # Link the static library makeTrym\depend\glfw\src\glfw3.lib
 
 build makeTrym\depend\glfw\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\context.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\init.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\input.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\window.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj makeTrym\depend\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64
+  LANGUAGE_COMPILE_FLAGS = -m32 -fdiagnostics-absolute-paths  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:X86
   OBJECT_DIR = makeTrym\depend\glfw\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -473,7 +473,7 @@ build makeTrym\depend\glfw\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug ma
 # Utility command for install/local
 
 build makeTrym\depend\glfw\src\CMakeFiles\install\local.util: CUSTOM_COMMAND makeTrym\depend\glfw\src\all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw\src" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -485,7 +485,7 @@ build makeTrym\depend\glfw\src\install\local: phony makeTrym\depend\glfw\src\CMa
 # Utility command for install
 
 build makeTrym\depend\glfw\src\CMakeFiles\install.util: CUSTOM_COMMAND makeTrym\depend\glfw\src\all
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw\src" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -497,7 +497,7 @@ build makeTrym\depend\glfw\src\install: phony makeTrym\depend\glfw\src\CMakeFile
 # Utility command for edit_cache
 
 build makeTrym\depend\glfw\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "D:\CPP\MeineProjekte\makeTrym\out\build\x64-Debug (Standard)\makeTrym\depend\glfw\src" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\CPP\MeineProjekte\makeTrym\out\build\x86-Clang-Debug\makeTrym\depend\glfw\src && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -518,9 +518,9 @@ build glfw: phony makeTrym\depend\glfw\src\glfw3.lib
 
 build glfw3.lib: phony makeTrym\depend\glfw\src\glfw3.lib
 
-build makeTrym: phony makeTrym\makeTrym.exe
+build makeTrym: phony ..\..\..\makeTrym.exe
 
-build makeTrym.exe: phony makeTrym\makeTrym.exe
+build makeTrym.exe: phony ..\..\..\makeTrym.exe
 
 build uninstall: phony makeTrym\depend\glfw\uninstall
 
@@ -532,28 +532,28 @@ build update_mappings: phony makeTrym\depend\glfw\src\update_mappings
 # =============================================================================
 
 #############################################
-# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x64-Debug (Standard)
+# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x86-Clang-Debug
 
 build all: phony makeTrym\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x64-Debug (Standard)/makeTrym
+# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x86-Clang-Debug/makeTrym
 
-build makeTrym\all: phony makeTrym\makeTrym.exe makeTrym\depend\glfw\all
+build makeTrym\all: phony ..\..\..\makeTrym.exe makeTrym\depend\glfw\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x64-Debug (Standard)/makeTrym/depend/glfw
+# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x86-Clang-Debug/makeTrym/depend/glfw
 
 build makeTrym\depend\glfw\all: phony makeTrym\depend\glfw\src\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x64-Debug (Standard)/makeTrym/depend/glfw/src
+# Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x86-Clang-Debug/makeTrym/depend/glfw/src
 
 build makeTrym\depend\glfw\src\all: phony makeTrym\depend\glfw\src\glfw3.lib
 
@@ -564,14 +564,14 @@ build makeTrym\depend\glfw\src\all: phony makeTrym\depend\glfw\src\glfw3.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\makeTrym\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\cmake_uninstall.cmake.in ..\..\..\makeTrym\depend\glfw\src\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\src\glfw3.pc.in ..\..\..\makeTrym\depend\glfw\src\glfw3Config.cmake.in ..\..\..\makeTrym\depend\glfw\src\glfw_config.h.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\makeTrym\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\cmake_uninstall.cmake.in ..\..\..\makeTrym\depend\glfw\src\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\src\glfw3.pc.in ..\..\..\makeTrym\depend\glfw\src\glfw3Config.cmake.in ..\..\..\makeTrym\depend\glfw\src\glfw_config.h.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\Clang-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\Clang-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\Clang.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-Clang-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-Clang-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-Clang.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\makeTrym\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\cmake_uninstall.cmake.in ..\..\..\makeTrym\depend\glfw\src\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\src\glfw3.pc.in ..\..\..\makeTrym\depend\glfw\src\glfw3Config.cmake.in ..\..\..\makeTrym\depend\glfw\src\glfw_config.h.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\makeTrym\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\cmake_uninstall.cmake.in ..\..\..\makeTrym\depend\glfw\src\CMakeLists.txt ..\..\..\makeTrym\depend\glfw\src\glfw3.pc.in ..\..\..\makeTrym\depend\glfw\src\glfw3Config.cmake.in ..\..\..\makeTrym\depend\glfw\src\glfw_config.h.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeDependentOption.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\Clang-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\Clang-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\Clang.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\FindThreads.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-Clang-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-Clang-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-Clang.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,0 +1,17 @@
+#version 330 core
+
+
+//uniform float WindowWidth;
+//uniform float WindowHeight;
+out vec4 FragColor;
+
+//in vec2 TexCoord;
+
+//uniform sampler2D _texture;
+
+void main()
+{
+	//vec4 texColor = texture(_texture, TexCoord);
+	//FragColor = texColor;
+	FragColor = vec4(1.0, 0.4, 0.4, 1.0);
+}
