@@ -6,12 +6,16 @@ int main()
 	std::cout << "Hello CMake." << std::endl;
 	std::cout << std::endl;
 
-	glfwInit();
+	if (!glfwInit()) {
+		std::cout << "glfw init failed" << std::endl;
+	};
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	GLFWwindow* window = glfwCreateWindow(500, 500, "hasoidj", 0, 0);
-
+	if (!window) {
+		std::cout << "window or opengl failed" << std::endl;
+	}
 	glfwMakeContextCurrent(window);
 	int version = gladLoadGL();
 	std::cout << version << std::endl;
