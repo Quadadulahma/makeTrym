@@ -33,3 +33,7 @@
 1	206	691818695	../../../makeTrym.exe	97dde133b7895b4c
 1	1192	691818799	makeTrym/CMakeFiles/makeTrym.dir/depend/src/ShaderProgram.cpp.obj	5aed626d5eb810ff
 1192	1388	691818799	../../../makeTrym.exe	97dde133b7895b4c
+34	1573	692239355	makeTrym/CMakeFiles/makeTrym.dir/makeTrym.cpp.obj	f9b08ec51feb5a12
+1	1736	692239355	makeTrym/CMakeFiles/makeTrym.dir/depend/src/ShaderProgram.cpp.obj	5aed626d5eb810ff
+31	1737	692239355	makeTrym/CMakeFiles/makeTrym.dir/depend/glad/src/glad.c.obj	a0bf0e105020fc0c
+1737	2171	692239355	../../../makeTrym.exe	97dde133b7895b4c

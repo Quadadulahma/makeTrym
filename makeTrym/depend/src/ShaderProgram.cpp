@@ -2,7 +2,7 @@
 
 ShaderProgram::ShaderProgram(std::string name)
 {
-	std::string vertexShaderString = loadFile("shaders\\"+name+".vertex");
+	std::string vertexShaderString = loadFile("shaders/"+name+".vertex");
 	
 	const char* vertexShaderCharPtr = vertexShaderString.c_str();
 	GLuint vertexShader;
@@ -22,7 +22,7 @@ ShaderProgram::ShaderProgram(std::string name)
 		std::cout << "vertex shader compiled: " << name << std::endl;
 	}
 
-	std::string fragmentShaderString = loadFile("shaders\\" + name + ".fragment");
+	std::string fragmentShaderString = loadFile("shaders/" + name + ".fragment");
 	const char* fragmentShaderCharPtr = fragmentShaderString.c_str();
 	GLuint fragmentShader;
 	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);

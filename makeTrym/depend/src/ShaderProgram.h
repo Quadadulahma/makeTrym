@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include "..\..\depend\glad\include\glad\glad.h"
+#include "../../depend/glad/include/glad/glad.h"
 #include <string>
 #include <iostream>
 #include "loading.h"
