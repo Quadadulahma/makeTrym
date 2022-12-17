@@ -11,6 +11,15 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory ("depend/glfw")
 target_link_libraries(makeTrym glfw)
+if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
+  target_link_libraries(makeTrym ws2_32)
+  add_definitions(-DPLATFORM_WINDOWS)
+elseif(CMAKE_HOST_UNIX)
+	add_defintinos(-DPLATFORM_UNIX)
+endif()
+
+
+
 find_package(OpenGL REQUIRED)
 
 target_link_libraries(makeTrym OpenGL::GL -lc++experimental)
