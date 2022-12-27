@@ -1,0 +1,20 @@
+#version 330 core
+
+layout(location = 0) in vec3 aPos; 
+layout(location = 1) in vec2 aTexCoords;
+
+uniform vec2 Window_Dimension;
+uniform float Mouse_on_Button;
+out vec2 texCoords;
+
+void main() {
+	texCoords = aTexCoords;
+	
+	if(Mouse_on_Button == 1.0){
+		gl_Position = vec4(aPos.x * 1.05, aPos.y * 1.05, 0.0, 1.0);
+	}
+	else
+	{
+		gl_Position = vec4(aPos.x, aPos.y, 0.0, 1.0);
+	}
+}

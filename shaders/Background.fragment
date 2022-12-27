@@ -1,17 +1,15 @@
 #version 330 core
 
 
-//uniform float WindowWidth;
-//uniform float WindowHeight;
+uniform vec2 Window_Dimension;
+
+uniform sampler2D texture0;
+uniform float Time;
+in vec2 texCoords;
+
 out vec4 FragColor;
-
-//in vec2 TexCoord;
-
-//uniform sampler2D _texture;
 
 void main()
 {
-	//vec4 texColor = texture(_texture, TexCoord);
-	//FragColor = texColor;
-	FragColor = vec4(0, 0, 0, 1.0);
+	FragColor = texture(texture0, vec2(texCoords.x * Window_Dimension.x/Window_Dimension.y, texCoords.y + Time/500.0));
 }

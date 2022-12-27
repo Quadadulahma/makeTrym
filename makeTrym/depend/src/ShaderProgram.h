@@ -5,6 +5,11 @@
 #include <string>
 #include <iostream>
 #include "loading.h"
+#include "Texture.h"
+#include <vector>
+#include <string>
+#include <utility>
+
 
 class ShaderProgram
 {

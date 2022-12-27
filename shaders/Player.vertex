@@ -1,0 +1,23 @@
+#version 330 core
+#define PI 3.1415926535897932384626433832795
+
+layout(location = 0) in vec3 aPos; 
+layout(location = 1) in vec2 aTexCoords;
+uniform vec2 Player_Position;
+
+uniform float Time;
+uniform vec2 Window_Dimension;
+uniform float Rotation;
+
+
+out vec2 texCoords;
+
+void main() {
+	mat2 rotationMatrix = mat2(cos(-Rotation + PI), sin(-Rotation + PI), sin(-Rotation + PI), -cos(-Rotation + PI));
+
+	vec2 pos = rotationMatrix * aPos.xy;
+
+	texCoords = aTexCoords;
+
+	gl_Position = vec4(pos.x * Window_Dimension.y/Window_Dimension.x + Player_Position.x/Window_Dimension.x, pos.y + Player_Position.y/Window_Dimension.y, 0.0, 1.0);
+}

@@ -1,0 +1,27 @@
+# ninja log v5
+26	1753	693243265	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/context.c.obj	3873cec2a31275cd
+45	1763	693243265	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	6e25d673559bbea
+54	1770	693243265	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/init.c.obj	f51347b28cc13b3d
+66	1889	693243265	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/window.c.obj	b895a669b4c01c25
+59	2079	693243265	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/input.c.obj	8e4402b7befdff3c
+12	2413	693243266	makeTrym/CMakeFiles/makeTrym.dir/depend/src/Entity/Entity.cpp.obj	a9e929d34d194fb1
+1770	2885	693243266	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	6426ad23fba7beae
+1	2996	693243266	makeTrym/CMakeFiles/makeTrym.dir/depend/src/ShaderProgram.cpp.obj	c9edd9c77ab55559
+1753	3012	693243266	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	e281d6f73c6b55aa
+1763	3019	693243266	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	68187b6402af5ab1
+1890	3128	693243266	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	2d8ce85e6c8242e0
+21	3196	693243266	makeTrym/CMakeFiles/makeTrym.dir/depend/src/loading.cpp.obj	4db4353b8f8b5c63
+2079	3543	693243267	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	84ab9b02b961a320
+2414	3622	693243267	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	126655efd5b89c65
+2885	3991	693243267	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	3f472958438b1038
+2996	3999	693243267	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	2c17c282f8521b61
+3020	4001	693243267	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	c08f1c9683bafd6f
+9	4046	693243267	makeTrym/CMakeFiles/makeTrym.dir/depend/glad/src/glad.c.obj	9588bf985cd12e8f
+5	4129	693243267	makeTrym/CMakeFiles/makeTrym.dir/makeTrym.cpp.obj	85d916302eca6f26
+3012	4269	693243268	makeTrym/depend/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	63f2151ef7edf56a
+4269	4390	693243268	makeTrym/depend/glfw/src/glfw3.lib	ce68d705dd8c5c4c
+4390	4735	693243268	../../../makeTrym.exe	c56551c1bffb3671
+2	1944	693243297	makeTrym/CMakeFiles/makeTrym.dir/makeTrym.cpp.obj	85d916302eca6f26
+1944	2134	693243297	../../../makeTrym.exe	c56551c1bffb3671
+1	1934	693245067	makeTrym/CMakeFiles/makeTrym.dir/makeTrym.cpp.obj	85d916302eca6f26
+1935	2176	693245067	../../../makeTrym.exe	c56551c1bffb3671

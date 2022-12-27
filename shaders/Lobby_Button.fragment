@@ -1,0 +1,20 @@
+#version 330 core
+
+
+uniform vec2 Window_Dimension;
+
+uniform sampler2D texture0;
+uniform float Time;
+
+
+in vec2 texCoords;
+
+out vec4 FragColor;
+
+void main()
+{
+	FragColor = texture(texture0, vec2(texCoords.x, texCoords.y));
+	if(FragColor == vec4(0.0,0.0,0.0,1.0)){
+			discard;
+	}
+}

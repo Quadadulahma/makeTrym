@@ -1,5 +1,6 @@
 #include "ShaderProgram.h"
 
+
 ShaderProgram::ShaderProgram(std::string name)
 {
 	std::string vertexShaderString = loadFile("shaders/"+name+".vertex");

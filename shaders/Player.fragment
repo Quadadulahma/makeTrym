@@ -1,0 +1,29 @@
+#version 330 core
+
+
+uniform vec2 Window_Dimension;
+
+uniform sampler2D texture0;
+
+uniform float Time;
+
+in vec2 texCoords;
+
+out vec4 FragColor;
+
+
+void main()
+{
+	vec4 outColor = texture(texture0, texCoords);
+
+	if(outColor.a < 0.1){
+		discard;
+	}
+	if(outColor.a < 1.0)
+	{
+		float stripeIntensity = floor(abs(sin((gl_FragCoord.y ) /200.0 + Time*1.2))*2.0);
+		outColor = mix(vec4(0.0,0.0,0.0,1.0), outColor, stripeIntensity+1.0);
+	}
+	FragColor = vec4(outColor.rrr,1.0 );
+	
+}

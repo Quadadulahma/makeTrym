@@ -102,36 +102,76 @@ build list_install_components: phony
 build cmake_object_order_depends_target_makeTrym: phony || cmake_object_order_depends_target_glfw
 
 build makeTrym\CMakeFiles\makeTrym.dir\makeTrym.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\makeTrym.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 build makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src\glad.c.obj: C_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\glad\src\glad.c || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 build makeTrym\CMakeFiles\makeTrym.dir\depend\src\ShaderProgram.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\ShaderProgram.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 build makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\loading.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
   INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_PDB = ..\..\..\makeTrym.pdb
+
+build makeTrym\CMakeFiles\makeTrym.dir\depend\src\Entity\Entity.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\Entity\Entity.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
+  OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
+  OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src\Entity
+  TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
+  TARGET_PDB = ..\..\..\makeTrym.pdb
+
+build makeTrym\CMakeFiles\makeTrym.dir\depend\src\Texture.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\Texture.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
+  OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
+  OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src
+  TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
+  TARGET_PDB = ..\..\..\makeTrym.pdb
+
+build makeTrym\CMakeFiles\makeTrym.dir\depend\stbi_image\stb_image.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\stbi_image\stb_image.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
+  OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
+  OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\stbi_image
+  TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
+  TARGET_PDB = ..\..\..\makeTrym.pdb
+
+build makeTrym\CMakeFiles\makeTrym.dir\depend\src\Game.cpp.obj: CXX_COMPILER__makeTrym_Debug ..\..\..\makeTrym\depend\src\Game.cpp || cmake_object_order_depends_target_makeTrym
+  DEFINES = -DPLATFORM_WINDOWS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -I..\..\..\makeTrym\depend\glfw\include
+  OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
+  OBJECT_FILE_DIR = makeTrym\CMakeFiles\makeTrym.dir\depend\src
+  TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 
 # =============================================================================
@@ -139,19 +179,19 @@ build makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj: CXX_COMPILER_
 
 
 #############################################
-# Link the executable makeTrym\makeTrym.exe
+# Link the executable ..\..\..\makeTrym.exe
 
-build makeTrym\makeTrym.exe: CXX_EXECUTABLE_LINKER__makeTrym_Debug makeTrym\CMakeFiles\makeTrym.dir\makeTrym.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src\glad.c.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\ShaderProgram.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj | makeTrym\depend\glfw\src\glfw3.lib || makeTrym\depend\glfw\src\glfw3.lib
+build ..\..\..\makeTrym.exe: CXX_EXECUTABLE_LINKER__makeTrym_Debug makeTrym\CMakeFiles\makeTrym.dir\makeTrym.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\glad\src\glad.c.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\ShaderProgram.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\loading.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\Entity\Entity.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\Texture.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\stbi_image\stb_image.cpp.obj makeTrym\CMakeFiles\makeTrym.dir\depend\src\Game.cpp.obj | makeTrym\depend\glfw\src\glfw3.lib || makeTrym\depend\glfw\src\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = makeTrym\depend\glfw\src\glfw3.lib  opengl32.lib  -lc++experimental  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = makeTrym\depend\glfw\src\glfw3.lib  ws2_32.lib  opengl32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = makeTrym\CMakeFiles\makeTrym.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_COMPILE_PDB = makeTrym\CMakeFiles\makeTrym.dir\
-  TARGET_FILE = makeTrym\makeTrym.exe
-  TARGET_IMPLIB = makeTrym\makeTrym.lib
-  TARGET_PDB = makeTrym\makeTrym.pdb
+  TARGET_FILE = ..\..\..\makeTrym.exe
+  TARGET_IMPLIB = ..\..\..\makeTrym.lib
+  TARGET_PDB = ..\..\..\makeTrym.pdb
 
 
 #############################################
@@ -518,9 +558,9 @@ build glfw: phony makeTrym\depend\glfw\src\glfw3.lib
 
 build glfw3.lib: phony makeTrym\depend\glfw\src\glfw3.lib
 
-build makeTrym: phony makeTrym\makeTrym.exe
+build makeTrym: phony ..\..\..\makeTrym.exe
 
-build makeTrym.exe: phony makeTrym\makeTrym.exe
+build makeTrym.exe: phony ..\..\..\makeTrym.exe
 
 build uninstall: phony makeTrym\depend\glfw\uninstall
 
@@ -541,7 +581,7 @@ build all: phony makeTrym\all
 #############################################
 # Folder: D:/CPP/MeineProjekte/makeTrym/out/build/x64-Debug (Standard)/makeTrym
 
-build makeTrym\all: phony makeTrym\makeTrym.exe makeTrym\depend\glfw\all
+build makeTrym\all: phony ..\..\..\makeTrym.exe makeTrym\depend\glfw\all
 
 # =============================================================================
 
