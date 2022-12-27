@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "D:/CPP/MeineProjekte/makeTrym/makeTrym.exe"
+			"path" : "D:/CPP/MeineProjekte/makeTrym/sling.exe"
 		},
 		{
-			"path" : "D:/CPP/MeineProjekte/makeTrym/makeTrym.pdb"
+			"path" : "D:/CPP/MeineProjekte/makeTrym/sling.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -167,7 +167,7 @@
 		"language" : "CXX"
 	},
 	"name" : "makeTrym",
-	"nameOnDisk" : "makeTrym.exe",
+	"nameOnDisk" : "sling.exe",
 	"paths" : 
 	{
 		"build" : "makeTrym",
