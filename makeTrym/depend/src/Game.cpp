@@ -41,6 +41,7 @@ void init_game() {
 	}
 	start_time_global = std::chrono::steady_clock::now();
 
+#ifdef PLATFORM_WINDOWS
 	WSADATA wsaData;
 	WSAStartup(MAKEWORD(2, 2), &wsaData);
 
@@ -51,7 +52,7 @@ void init_game() {
 		// An error occurred
 		std::cout << "an error accured (WSASTartup) " << std::endl;
 	}
-
+#endif
 
 	game_background_ptr = std::make_unique<Game_Background>();
 	create_lobby_button_ptr = std::make_unique<Create_Lobby_Button>();

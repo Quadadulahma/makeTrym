@@ -17,7 +17,7 @@ public:
     }
 
     T& last_element() const {
-        assert(!IsEmpty());  // Check that the buffer is not empty.
+        assert(!is_empty());  // Check that the buffer is not empty.
         return buffer_[(head_ - 1 + N) % N];
     }
 

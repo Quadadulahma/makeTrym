@@ -111,7 +111,7 @@ int main()
 
 	// Clean up
 //	closesocket(sock);
-	WSACleanup();
+//	WSACleanup();
 	
 
 	return 0;
