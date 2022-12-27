@@ -1,6 +1,6 @@
 ﻿#include "makeTrym.h"
 
-
+#ifdef PLATFORM_WINDOWS
 #include <winsock2.h>
 #include <thread>
 
@@ -71,7 +71,7 @@ void server_loop(SOCKET sock)
 		client_thread.detach(); // Detach the thread to allow it to run independently
 	}
 }
-
+#endif
 
 
 int main()
