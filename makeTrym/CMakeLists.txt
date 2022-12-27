@@ -15,7 +15,7 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
   target_link_libraries(makeTrym ws2_32)
   add_definitions(-DPLATFORM_WINDOWS)
 elseif(CMAKE_HOST_UNIX)
-	add_defintinos(-DPLATFORM_UNIX)
+	add_definitions(-DPLATFORM_UNIX)
 endif()
 
 
